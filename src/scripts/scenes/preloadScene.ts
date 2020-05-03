@@ -1,5 +1,3 @@
-import LevelScene from "./levelScene";
-
 export default class PreloadScene extends Phaser.Scene {
   constructor() {
     super({ key: 'PreloadScene' });
@@ -7,13 +5,16 @@ export default class PreloadScene extends Phaser.Scene {
 
   preload() {
 
-    this.load.image("main", "assets/ada.png");
-    this.load.image("pause", "assets/potato.png");
-    this.load.image("gameOver", "assets/soon.png");
-    this.load.image("tutorial", "assets/whiteboard_corgi.png");
-    this.load.image("level1", "assets/campus.png");
-    this.load.image("level2", "assets/east_campus.png");
-    this.load.image("level3", "assets/trabant.png");
+    this.load.image("ada", "assets/ada.png");
+    this.load.image("potato", "assets/potato.png");
+    this.load.image("cat", "assets/soon.png");
+    this.load.image("corgi", "assets/whiteboard_corgi.png");
+    this.load.image("campus", "assets/campus.png");
+    this.load.image("east_campus", "assets/east_campus.png");
+    this.load.image("trabant", "assets/trabant.png");
+
+    this.load.audio("boom", "assets/boom.wav");
+    this.load.audio("bounce", "assets/bounce.wav");
   }
 
   create() {
